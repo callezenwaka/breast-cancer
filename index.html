@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breast Cancer Classifier</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Breast Cancer Wisconsin (Diagnostic) Data Set</h1>
+    <p> 1) ID number 2) Diagnosis (M = malignant, B = benign) 3-32) Ten real-valued features are computed for each cell nucleus:</p>
+    <p> a) radius (mean of distances from center to points on the perimeter) b) texture (standard deviation of gray-scale values) </p>
+    <p> c) perimeter d) area e) smoothness (local variation in radius lengths) f) compactness (perimeter^2 / area - 1.0) </p>
+    <p> g) concavity (severity of concave portions of the contour) h) concave points (number of concave portions of the contour) i) symmetry j) fractal dimension ("coastline approximation" - 1)</p>
+    <p>More info <a href="https://archive-beta.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+diagnostic">here.</a></p><br>
+    <div>Upload test data comprising of 30 features array.</div>
+    <div class="form--item">
+      <label class="form--label" for="file">Upload File</label>
+      <input class="form--input" type="file" id="file">
+      <!-- <button type="button" id="trainButton">Train Model</button> -->
+      <button class="form--button" type="button" id="testButton">Predict</button>
+    </div>
+    <!-- <canvas id="canvas" width="280" height="280" style="position:absolute;top:100;left:100;border:8px solid;"></canvas> -->
+    <!-- <img id="canvasimg" style="position:absolute;top:10%;left:52%;width:280;height:280;display:none;"> -->
+    <!-- <button type="button" id="trainButton" size="48" style="position:absolute;top:400;left:100;">Upload Data</button> -->
+    <!-- <button type="button" id="testButton" size="48" style="position:absolute;top:400;left:300;">Predict</button> -->
+    <!-- <input type="button" value="Train" id="trainButton" size="48" style="position:absolute;top:400;left:100;"> -->
+    <!-- <input type="button" value="Test" id="testButton" size="23" style="position:absolute;top:400;left:180;"> -->
+  </div>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
